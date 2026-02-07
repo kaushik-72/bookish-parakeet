@@ -31,6 +31,27 @@
   <script>
     // Write your solutions here
     // Do NOT modify the HTML above
+
+    //PQ1: Select the element with id 'username' and change its text content to 'Kaushik K'
+    const el = document.getElementById('username');
+    el.textContent = 'Kaushik K';  
+
+    //PQ2
+    el.style.textDecoration = 'underline'; // Underline the text
+    el.style.color = 'blue'; // Change the text color to blue
+    el.parentElement.style.backgroundColor = 'yellow';
+
+    //PQ3
+    el.classList.add('higlight', 'active')
+    console.log(el.classList);
+    el.classList.remove('active');
+    el.setAttribute('data-role', 'admin');
+
+    //PQ4
+    console.log(el.parentElement);
+    console.log(el.parentElement.childElementCount);
+    el.remove('username');        
+
   </script>
 
 </body>
