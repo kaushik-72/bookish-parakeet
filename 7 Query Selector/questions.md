@@ -1,35 +1,66 @@
-Practical Question 1
+# DOM Manipulation – Practical Questions
 
-You have multiple <p> elements with the class paragraph.
+Solve the following questions using **JavaScript DOM methods only**.  
+Do not modify the HTML structure unless explicitly mentioned.
 
-Use querySelectorAll() to select all of them.
+---
 
-Change their text to "Paragraph updated using JS".
+## Practical Question 1 – Easy (Multiple Element Selection)
 
-Apply a background color to each paragraph.
+**Scenario**  
+You have multiple `<p>` elements with the class `paragraph`.
 
------------------
+**Tasks**
+- Use `querySelectorAll()` to select all `<p>` elements with the class `paragraph`.
+- Change the text of each paragraph to:  
+  **"Paragraph updated using JS"**
+- Apply a background color to each paragraph.
 
-Practical Question 2
+**Concepts Covered**
+- `querySelectorAll()`
+- NodeList iteration
+- `innerText`
+- Inline styling with JavaScript
 
-An element has the ID username.
+---
 
-Select the element using querySelector.
+## Practical Question 2 – Medium (ID Selection & Styling)
 
-Change its text to your name.
+**Scenario**  
+An element exists with the ID `username`.
 
-Make the text bold using JavaScript.
+**Tasks**
+- Select the element using `querySelector`.
+- Change its text to your name.
+- Make the text bold using JavaScript.
 
-------------------
+**Concepts Covered**
+- `querySelector()`
+- `innerText`
+- Styling text using JavaScript
 
-Practical Question 3
+---
 
-There are multiple elements with the class block.
+## Practical Question 3 – Hard (Traversal & Child Manipulation)
 
-Select all .block elements.
+**Scenario**  
+There are multiple elements with the class `block`.
 
-For each element:
+**Tasks**
+- Select all elements with the class `block`.
+- For each selected element:
+  - Log its tag name to the console.
+  - Change only the **first child element’s** text content.
 
-Log its tag name to the console.
+**Concepts Covered**
+- `querySelectorAll()`
+- `forEach()`
+- `tagName`
+- `children` / first child element access
 
-Change only the first child element’s text content.
+---
+
+## Practice Rules
+- Use only JavaScript for manipulation.
+- Do not change the HTML markup.
+- Verify results using the browser console.
