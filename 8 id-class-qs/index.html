@@ -5,24 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .desg1{
+        #username{
             color:blue;
         }
     </style>
 </head>
 <body>
     <div class="block">
-<h4>Hey There, My name is <span class="desg1">Kaushik K</span>
+<h4>Hey There, My name is <span id="username">Kaushik K</span>
     <p class="paragraph">Here is a code for you</p> 
     <!-- <pre><code>console.log('Hey There')</code></pre> -->
     </h4>
     <p class="block"> this is inside p and class:block</p>
 
     <script>
-        const abc = document.getElementById("username");
-        console.log(abc.innerText);
-        abc.innerText="Updated Value";
-        console.log(abc.innerText);        
+        
+        const el = document.getElementById("username");
+        // console.log(el.innerText);
+        el.innerText="Updated Value";
+        // console.log(el.innerText);  
+        console.log(el);
+        /*
+        //classList
+        el.classList.add("new-class","another-class");  
+        console.log(el.classList); // open in console to see DOMTokenList
+
+        //remove class
+        el.classList.remove("another-class");
+        console.log(el.classList);    
+        */
+       
+        // to add inline textDecoration
+        el.style.textDecoration="underline";
+        el.style.color="olive";
+
+        console.log(el.parentElement); // to get parent element of the element 
+        el.parentElement.style.backgroundColor="lightgray";// to change background color of parent element   
+        
+        el.setAttribute("xyz","abc"); // to set new attribute to the element
+        
+        el.remove(); // to remove the element from the DOM
+        
     </script>
 </div>
 </body>
