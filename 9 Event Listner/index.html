@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="block">
+<h4 id="tskK1">Hey There, My name is 
+    <span onclick="alert('Clicked')"  id="username">Kaushik K</span>
+    </h4>
+    <p class="paragraph">Here is a code for you</p> 
+    <!-- <pre><code>console.log('Hey There')</code></pre> -->
+    
+    <p class="block"> this is inside p and class:block</p>
+    </div>
+    <!-- <button onclick="console.log('Clicked');">Click Me</button> -->
+
+    <!-- <script>
+        const idStyle = document.getElementById('username').style;
+         idStyle.color = 'olive';
+         idStyle.textDecoration = 'underline'; 
+    </script> -->
+
+    <!-- method 1 -->
+    <!-- <button onclick="handleClick()">Click Me</button>
+
+    <script>
+        function handleClick(){
+            console.log('Clicked');
+            alert('Function Called');
+        }
+    </script> -->
+    <button id="btn">Click Me</button>
+
+    <script>
+        // const el = document.getElementById('btn');
+        // // el.onclick = () => {
+        // //     console.log('Clicked');
+        // // }
+
+        // el.addEventListener("click", () => {
+        //     console.log('Clicked');
+        // })
+
+        // on click of the button change the h4 element color
+        const el = document.getElementById("btn");
+        const tskK1 = document.getElementById("tskK1"); 
+        // el.addEventListener("click", () => {
+        //     tskK1.style.color = "blue";
+        //     tskK1.style.textDecoration = "underline";
+        // })
+
+        // toggle color using if-else redto blue and blue to red
+        el.addEventListener("click", () => {
+            if(tskK1.style.color === "red"){
+                tskK1.style.color = "blue";
+            } else {
+                tskK1.style.color = "red";
+            }
+        })
+       
+    </script>
+    
+    
+</body>
+</html>
