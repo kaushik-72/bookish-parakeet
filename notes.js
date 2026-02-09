@@ -27,3 +27,7 @@ el.children
 el.setAttribute("attributeName", "attributeValue")
 
 */
+
+//-------9 Event Listner-------
+
+//everything after document. are methodds of the document. obj.
