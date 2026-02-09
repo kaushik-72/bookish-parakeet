@@ -45,21 +45,31 @@
         // })
 
         // on click of the button change the h4 element color
-        const el = document.getElementById("btn");
-        const tskK1 = document.getElementById("tskK1"); 
+        // const el = document.getElementById("btn");
+        // const tskK1 = document.getElementById("tskK1"); 
         // el.addEventListener("click", () => {
         //     tskK1.style.color = "blue";
         //     tskK1.style.textDecoration = "underline";
         // })
 
         // toggle color using if-else redto blue and blue to red
-        el.addEventListener("click", () => {
-            if(tskK1.style.color === "red"){
-                tskK1.style.color = "blue";
-            } else {
-                tskK1.style.color = "red";
-            }
-        })
+        // el.addEventListener("click", () => {
+        //     if(tskK1.style.color === "red"){
+        //         tskK1.style.color = "blue";
+        //     } else {
+        //         tskK1.style.color = "red";
+        //     }
+        // })
+
+        //remove any clicked element by clicking on it
+       const relEl=(document.querySelector("body").children);
+         for(let i=0; i<relEl.length; i++){
+          relEl.item(i).addEventListener("click",()=>{
+            relEl.item(i).remove();
+          })
+         }
+        
+        
        
     </script>
     
