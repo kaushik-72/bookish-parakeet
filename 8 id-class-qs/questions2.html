@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM Practice</title>
+
+  <style>
+    .block {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .box {
+      width: 100px;
+      padding: 10px;
+      margin: 5px 0;
+      background-color: lightgray;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Block section -->
+  <div class="block">
+    <h4>
+      Hey There, My name is
+      <span id="username">Kaushik K</span>
+    </h4>
+    <p class="paragraph">Here is a code for you</p>
+  </div>
+
+  <p class="block">This is inside p tag not div</p>
+
+  <!-- Box section -->
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+  <div class="box">Box 4</div>
+
+  <script>
+    // Write all DOM practice code here
+    /* 
+    Q1. Accessing Elements by Class Name
+    const selector1= document.getElementsByClassName("block");
+    console.log(selector1.length);
+    console.log(selector1[0].innerText);
+    */
+
+    /*
+    Q2. Updating Text Content
+    const selector2 = document.getElementById("username");
+    selector2.innerText = "John Doe";
+    */
+
+    /*
+    Q3. Applying Inline Styles
+    const selector3 = document.getElementsByClassName("block");
+    selector3[1].style.color = "blue";
+    selector3[1].style.fontSize = "40px";   
+    */
+
+    /*
+    Q4. Looping Over HTMLCollection 
+    const selector4 = document.getElementsByClassName("block");
+    for(let i=0; i<selector4.length; i++){
+        selector4[0].style.color= "red";
+    }
+    */
+
+    
+
+
+
+
+
+    
+  </script>
+
+
+</body>
+</html>
