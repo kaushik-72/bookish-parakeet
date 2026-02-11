@@ -71,13 +71,55 @@
     }
     */
 
+    /*
+    Q5. Removing Elements Dynamically
+    const selector4 = document.getElementsByClassName("box");
+    selector4[0].remove();
+    selector4[1].remove();
+    */
+
+    /*
+    Q6. Understanding Live HTMLCollection Behavior  
+    const selector5 = document.getElementsByClassName("box");
+    // console.log(selector5);    
+    selector5[0].remove();
     
+    selector5[1].remove();
+    console.log(selector5);
+    */
 
+    /*
+    Q7. Conditional DOM Manipulation  
+    const selector7 = document.getElementsByClassName("block");
+    for(let i=0; i<selector7.length;i++){
+      if(selector7[i].tagName ==="P"){
+        selector7[i].style.color = "orange";
+      }
+    }
+    */
 
-
-
-
+    /*
+    Q8. Creating Elements Dynamically  
+    const newElement = document.createElement("div");
+    newElement.className='box';
+    newElement.textContent='Box 5';
     
+    const parent = document.body;
+    parent.appendChild(newElement);
+    */
+
+    /*
+    Q9. Safe DOM Traversal  
+    const selector8 = document.getElementsByClassName("block")[0];
+    const spanSelc = selector8.querySelector("span");
+    console.log(spanSelc);
+
+    spanSelc.style.color ='olive';  
+    */
+   
+    
+    
+        
   </script>
 
 
