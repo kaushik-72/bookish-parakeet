@@ -1,127 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOM Practice</title>
-
-  <style>
-    .block {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-
-    .box {
-      width: 100px;
-      padding: 10px;
-      margin: 5px 0;
-      background-color: lightgray;
-      cursor: pointer;
-    }
-  </style>
 </head>
-
 <body>
 
-  <!-- Block section -->
-  <div class="block">
-    <h4>
-      Hey There, My name is
-      <span id="username">Kaushik K</span>
-    </h4>
-    <p class="paragraph">Here is a code for you</p>
+  <div class="container">
+    <h3>Hello, Welcome <span id="user">John Doe</span></h3>
+    <p class="text">Practice DOM Manipulation</p>
   </div>
 
-  <p class="block">This is inside p tag not div</p>
+  <p class="container">This is another container paragraph</p>
 
-  <!-- Box section -->
-  <div class="box">Box 1</div>
-  <div class="box">Box 2</div>
-  <div class="box">Box 3</div>
-  <div class="box">Box 4</div>
+  <div class="item">Item A</div>
+  <div class="item">Item B</div>
+  <div class="item">Item C</div>
+  <div class="item">Item D</div>
 
-  <script>
-    // Write all DOM practice code here
-    /* 
-    Q1. Accessing Elements by Class Name
-    const selector1= document.getElementsByClassName("block");
-    console.log(selector1.length);
-    console.log(selector1[0].innerText);
-    */
-
-    /*
-    Q2. Updating Text Content
-    const selector2 = document.getElementById("username");
-    selector2.innerText = "John Doe";
-    */
-
-    /*
-    Q3. Applying Inline Styles
-    const selector3 = document.getElementsByClassName("block");
-    selector3[1].style.color = "blue";
-    selector3[1].style.fontSize = "40px";   
-    */
-
-    /*
-    Q4. Looping Over HTMLCollection 
-    const selector4 = document.getElementsByClassName("block");
-    for(let i=0; i<selector4.length; i++){
-        selector4[0].style.color= "red";
-    }
-    */
-
-    /*
-    Q5. Removing Elements Dynamically
-    const selector4 = document.getElementsByClassName("box");
-    selector4[0].remove();
-    selector4[1].remove();
-    */
-
-    /*
-    Q6. Understanding Live HTMLCollection Behavior  
-    const selector5 = document.getElementsByClassName("box");
-    // console.log(selector5);    
-    selector5[0].remove();
-    
-    selector5[1].remove();
-    console.log(selector5);
-    */
-
-    /*
-    Q7. Conditional DOM Manipulation  
-    const selector7 = document.getElementsByClassName("block");
-    for(let i=0; i<selector7.length;i++){
-      if(selector7[i].tagName ==="P"){
-        selector7[i].style.color = "orange";
-      }
-    }
-    */
-
-    /*
-    Q8. Creating Elements Dynamically  
-    const newElement = document.createElement("div");
-    newElement.className='box';
-    newElement.textContent='Box 5';
-    
-    const parent = document.body;
-    parent.appendChild(newElement);
-    */
-
-    /*
-    Q9. Safe DOM Traversal  
-    const selector8 = document.getElementsByClassName("block")[0];
-    const spanSelc = selector8.querySelector("span");
-    console.log(spanSelc);
-
-    spanSelc.style.color ='olive';  
-    */
-   
-    
-    
-        
-  </script>
-
-
+  <script src="sol2.js"></script>
 </body>
 </html>

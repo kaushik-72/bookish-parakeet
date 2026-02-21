@@ -1,33 +1,114 @@
-# DOM Manipulation – Practical Questions
+# DOM Practice Questions
 
-Solve all questions using JavaScript only.
-Do not modify the HTML or CSS.
+> 🛠️ Create a separate **.js file** and perform all JavaScript-related tasks inside it.
 
----
-
-## Practical Question 1 – Easy
-- Select the element with ID `username`
-- Change its text to your full name
-- Log the updated text
+> 🧩 Use the provided `questions.html` file for solving the following:
 
 ---
 
-## Practical Question 2 – Medium
-- Underline the `username` text
-- Change its text color
-- Change the background color of its parent element
+# 🟢 Easy Level
 
 ---
 
-## Practical Question 3 – Hard
-- Add classes `active` and `highlight` to `username`
-- Remove one class
-- Add a custom attribute `data-role="admin"`
+### ✅ Question 1: Update Username Styling
+
+**Difficulty:** Easy  
+**Concepts Covered:** getElementById, style property
+
+- Select the element having id `user-name`.
+- Change the text color to purple.
+- Apply underline using inline styling.
+
+📁 Code in: your `.js` file
 
 ---
 
-## Practical Question 4 – Toughest
-- Log the parent element of `username`
-- Log the number of child elements
-- Remove `username` from the DOM
-- Observe what happens to the surrounding text
+### ✅ Question 2: Change Username Text
+
+**Difficulty:** Easy  
+**Concepts Covered:** innerText
+
+- Select the element having id `user-name`.
+- Update its displayed value to any custom name.
+
+📁 Code in: your `.js` file
+
+---
+
+# 🟡 Medium Level
+
+---
+
+### ⚙️ Question 3: Add and Remove Class
+
+**Difficulty:** Medium  
+**Concepts Covered:** classList.add(), classList.remove()
+
+- Select the element having id `user-name`.
+- Add a new class named `highlight`.
+- Then remove the same class using JavaScript.
+
+📁 Code in: your `.js` file
+
+---
+
+### ⚙️ Question 4: Change Parent Background
+
+**Difficulty:** Medium  
+**Concepts Covered:** parentElement
+
+- Select the element having id `user-name`.
+- Access its parent element.
+- Change the background color of the parent element to lightblue.
+
+📁 Code in: your `.js` file
+
+---
+
+# 🔴 Hard Level
+
+---
+
+### 🚀 Question 5: Add Custom Attribute
+
+**Difficulty:** Hard  
+**Concepts Covered:** setAttribute()
+
+- Select the element having id `user-name`.
+- Add a custom attribute named `data-role` with any value.
+
+📁 Code in: your `.js` file
+
+---
+
+### 🚀 Question 6: Remove Element from DOM
+
+**Difficulty:** Hard  
+**Concepts Covered:** remove()
+
+- Select the element having id `user-name`.
+- Remove it completely from the DOM.
+
+📁 Code in: your `.js` file
+
+---
+
+# 📌 Interview-Critical Topics Not Covered in the Code (index.html)
+
+- querySelector / querySelectorAll  
+  Widely used modern DOM selection methods in real-world applications.
+
+- addEventListener  
+  Important for making UI interactive using events.
+
+- createElement  
+  Needed for dynamically creating elements in DOM.
+
+- append / appendChild  
+  Frequently used to insert new elements dynamically.
+
+- Event Delegation  
+  Helps in handling events efficiently in larger applications.
+
+- NodeList vs HTMLCollection  
+  Important difference asked in interviews.

@@ -2,57 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOM Practice</title>
-
-  <style>
-    .block {
-      padding: 10px;
-      border: 1px solid #ccc;
-      margin-bottom: 10px;
-    }
-
-    #username {
-      color: blue;
-    }
-  </style>
 </head>
 <body>
 
-  <div class="block">
-    <h4>
-      Hey There, My name is 
-      <span id="username">User Name</span>
-    </h4>
-
-    <p class="paragraph">Here is a code for you</p>
-    <p class="block">This is inside p and class block</p>
+  <div class="wrapper">
+    <h3>Welcome Back <span id="user-name">Alex</span></h3>
+    <p class="info">Practice your DOM skills here</p>
   </div>
 
-  <script>
-    // Write your solutions here
-    // Do NOT modify the HTML above
-
-    //PQ1: Select the element with id 'username' and change its text content to 'Kaushik K'
-    const el = document.getElementById('username');
-    el.textContent = 'Kaushik K';  
-
-    //PQ2
-    el.style.textDecoration = 'underline'; // Underline the text
-    el.style.color = 'blue'; // Change the text color to blue
-    el.parentElement.style.backgroundColor = 'yellow';
-
-    //PQ3
-    el.classList.add('higlight', 'active')
-    console.log(el.classList);
-    el.classList.remove('active');
-    el.setAttribute('data-role', 'admin');
-
-    //PQ4
-    console.log(el.parentElement);
-    console.log(el.parentElement.childElementCount);
-    el.remove('username');        
-
-  </script>
-
+  <script src="sol1.js"></script>
 </body>
 </html>
